@@ -231,7 +231,7 @@
         const totalStars = repos.reduce((sum, r) => sum + r.stargazers_count, 0);
         const totalRepos = repos.length;
 
-        showMessage(`Top 10 starred repos of ${username} | Total Repos: ${totalRepos}, Total Stars: ${totalStars}`);
+        showMessage(`Top 10 star repos of ${username} | Total Repos: ${totalRepos}, Total Stars: ${totalStars}`);
       } catch (err) {
         showMessage(err.message, true);
         if (chart) chart.destroy();
